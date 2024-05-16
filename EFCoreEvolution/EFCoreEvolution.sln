@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34707.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Model", "Model\Model.shproj", "{74FFC114-652C-4365-88D3-F330BD59C92F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{409AD140-1120-4DE9-842C-7A645DFC5763}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore7", "EFCore7\EFCore7.csproj", "{D6782E21-B8FB-4A92-8429-EFA098C4A297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore6", "EFCore6\EFCore6.csproj", "{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6782E21-B8FB-4A92-8429-EFA098C4A297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6782E21-B8FB-4A92-8429-EFA098C4A297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6782E21-B8FB-4A92-8429-EFA098C4A297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6782E21-B8FB-4A92-8429-EFA098C4A297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B33D783-CBAF-4F60-8637-9C6F3F6551B3}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Model\Model.projitems*{4f5be422-d805-43e7-8b4f-aab5ec2753da}*SharedItemsImports = 5
+		Model\Model.projitems*{74ffc114-652c-4365-88d3-f330bd59c92f}*SharedItemsImports = 13
+		Model\Model.projitems*{d6782e21-b8fb-4a92-8429-efa098c4a297}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
