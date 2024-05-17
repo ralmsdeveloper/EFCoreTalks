@@ -30,6 +30,11 @@ internal class ExemploContext : DbContext
 		//modelBuilder.HasDatabaseMaxSize("2 GB");
 		//modelBuilder.HasPerformanceLevelSql("ELASTIC_POOL ( name = myelasticpool )");
 		//modelBuilder.HasPerformanceLevel("BC_Gen4_1");
+
+		//foreach (var entity in modelBuilder.Model.GetEntityTypes())
+		//{
+		//	entity.SetIsTemporal(true);
+		//}
 	}
 
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)

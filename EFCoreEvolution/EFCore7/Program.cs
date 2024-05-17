@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Model;
 
 
+//var db = new ExemploContext();
+//db.Database.EnsureDeleted();
+//return;
 
 #region  1 - Configuração do modelo de pré-convenção (EF Core 6)
 //var db = new ExemploContext();
@@ -91,19 +94,6 @@ using Model;
 //		s => s.SetProperty(b => b.Title, b => b.Title + " - Novo"));
 
 //await db.Blogs.ExecuteDeleteAsync();
-#endregion
-
-
-#region 6 - SQL Query
-var db = new ExemploContext();
-Helper.RecreateDatabase();
-Helper.PopulateDatabase();
-var id = 0;
-var blogs = db.Database.SqlQuery<BlogData>($"SELECT * FROM Blogs WHERE Id>{id}").ToArray();
-foreach (var item in blogs)
-{ 
-	Console.WriteLine($"{item.Id} |{item.Title} | {item.Url}");
-}
 #endregion
 
 
