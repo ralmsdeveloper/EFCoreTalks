@@ -15,6 +15,11 @@ using Model;
 
 
 #region 2 - Pacote de Migração  (EF Core 6)
+/*
+ * 1 - Melhor gerenciamento de migração principalmente para CI/CD
+ * 2 - Único executável
+ * 
+ */
 // dotnet ef migrations add Talks -v
 // dotnet ef migrations bundle -v
 #endregion
@@ -27,6 +32,11 @@ using Model;
 
 
 #region 4 - Tabelas Temporais (EF Core 6)
+/*
+ * 1 - Menos código para equipe Manter
+ * 2 - Tudo é Auditado
+ * 
+ */
 // p.ToTable("Blogs", x => x.IsTemporal());
 //var db = new ExemploContext();
 //Helper.RecreateDatabase();
