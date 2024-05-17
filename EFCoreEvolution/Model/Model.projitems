@@ -9,6 +9,8 @@
     <Import_RootNamespace>Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BlogData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BlogHistory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Blog.cs" />
   </ItemGroup>
 </Project>

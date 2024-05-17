@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore7", "EFCore7\EFCore7.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore6", "EFCore6\EFCore6.csproj", "{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore8", "EFCore8\EFCore8.csproj", "{E019B0CD-9182-43DA-9DC9-FE479BFF64B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5BE422-D805-43E7-8B4F-AAB5EC2753DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E019B0CD-9182-43DA-9DC9-FE479BFF64B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E019B0CD-9182-43DA-9DC9-FE479BFF64B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E019B0CD-9182-43DA-9DC9-FE479BFF64B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E019B0CD-9182-43DA-9DC9-FE479BFF64B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +45,6 @@ Global
 		Model\Model.projitems*{4f5be422-d805-43e7-8b4f-aab5ec2753da}*SharedItemsImports = 5
 		Model\Model.projitems*{74ffc114-652c-4365-88d3-f330bd59c92f}*SharedItemsImports = 13
 		Model\Model.projitems*{d6782e21-b8fb-4a92-8429-efa098c4a297}*SharedItemsImports = 5
+		Model\Model.projitems*{e019b0cd-9182-43da-9dc9-fe479bff64b1}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

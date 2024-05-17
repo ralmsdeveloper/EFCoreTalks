@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Model;
 
 namespace EFCore7;
@@ -11,18 +12,18 @@ internal class ExemploContext : DbContext
 	{
 		optionsBuilder
 			.UseSqlServer("Server=localhost,1433;Database=EFCore7;User Id=sa;Password=@Ralms2024;MultipleActiveResultSets=true;Integrated Security=False;Encrypt=false;")
-			.LogTo(Console.WriteLine)
+			.LogTo(Console.WriteLine, new[] { RelationalEventId.CommandExecuted }) 
 			.EnableSensitiveDataLogging();
 	}
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
-
-		modelBuilder.Entity<Blog>(p =>
-		{
-			p.HasIndex(b => b.Title).HasFillFactor(10);
-		});
-
+		modelBuilder
+			.Entity<Blog>(p =>
+			{
+				p.HasIndex(b => b.Title).HasFillFactor(10);
+                p.ToTable("Blogs", x => x.IsTemporal());
+            });
 
 
 		//modelBuilder.HasServiceTier("BusinessCritical");
@@ -30,4 +31,12 @@ internal class ExemploContext : DbContext
 		//modelBuilder.HasPerformanceLevelSql("ELASTIC_POOL ( name = myelasticpool )");
 		//modelBuilder.HasPerformanceLevel("BC_Gen4_1");
 	}
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        //configurationBuilder
+        //	.Properties<string>()
+        //	.AreUnicode(false)
+        //	.HaveMaxLength(100);
+    }
 }
